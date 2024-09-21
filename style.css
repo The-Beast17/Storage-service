@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding :0;
+    box-sizing: border-box;
+}
+
+html ,body{
+     height : 100%;
+     width : 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav , nav .right ,  nav ul , nav .registration{
+    display: flex;
+}
+
+nav{
+    width : 100%;
+    justify-content: space-between;
+    padding : 1vw 2vw;
+    /* background-color: aqua; */
+    align-items:center;
+    position: fixed;
+}
+
+nav img{
+    height : 7vh;
+}
+
+nav .right {
+    align-items: center;
+}
+nav ul{
+   gap : 3vw;
+}
+
+nav ul a{
+   text-decoration: none;
+   font-weight : 600;
+   color : rgb(34, 34, 34);
+   padding : 0.5vw 1.5vw;
+   border-radius : 25px;
+   transition: 0.25s linear;
+
+}
+nav ul a:hover {
+    background-color: blueviolet;
+    color : white;
+}
+nav .registration{
+   gap : 1vw;
+   margin-left : 2vw;
+   align-items: center;
+}
+
+nav .registration button{
+    padding : 0.5vw 2vw;
+    font-size: 1vw;
+    font-weight: 600;
+    border-radius: 25px;
+    border : none;
+    background-color: black;
+    color:white;
+}
+
+nav .registration button:hover {
+    background-color: rgb(75, 75, 75);
+}
+nav .registration p{
+    font-size: 2vw;
+}
+
+/*page1********************/
+.page1{
+    width : 100%;
+    height : 100%;
+}
+
+.page2 .empty ,.page1 .empty{
+    width : 100%;
+    height : 10%;
+}
+
+.page1 .content {
+    width : 100%;
+    height : 90%;
+    display: flex;
+}
+
+.page1 .content .left {
+    width : 50%;
+    height : 50%;
+    padding : 5vw 4vw;
+}
+.page1 .content .left h1{
+    font-size : 6.5vw;
+    font-weight: 900;
+    font-family: "bebas";
+}
+.page1 .content .left p{
+    font-size : 1vw;
+    padding : 1vw 0;
+}
+.page1 .content .left .Explore-btn{
+    font-size : 1vw;
+    font-weight: 600;
+    width : 40%;
+    padding : 0.6vw 1vw;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-bottom : 1px solid grey;
+    background-color: transparent;
+    margin : 2vw 0;
+    transition: 0.5s linear;
+}
+
+.page1 .content .left .Explore-btn:hover {
+    width : 50%;
+}
+
+
+.page1 .content .left .Subscribe-btn{
+    font-size : 1vw;
+    font-weight: 600;
+    padding : 1vw 3vw;
+    border-radius: 25px;
+    border : none;
+    background-color: blueviolet;
+    color : white;
+}
+.page1 .content .left .Subscribe-btn:hover{
+    background-color: rgb(115, 34, 192);
+}
+
+.page1 .content .right {
+    width : 50%;
+    height : 100%;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+}
+
+.page1 .content .right  img {
+    width : 100%;
+}
+
+/***********page2 ************/
+.page2{
+   width : 100%;
+   height : 100%;
+}
+
+.page2 .content{
+    width : 100%;
+    height : 90%;
+    display: flex;
+}
+
+.page2 .content .left{
+    width : 20%;
+    height : 100%;
+    background-color: rgb(199, 198, 198);
+    padding : 2vw 0;
+    display: flex;
+    flex-direction: column;
+    border-radius : 1.5vh;
+}
+
+.page2 .content .left h3{
+    display: flex;
+    justify-content: space-between;
+    width : 100%;
+   padding : 1vw 2vw;
+}
+
+.page2 .content .left a{
+    width : max-content;
+    text-decoration: none;
+    color : black;
+    padding : 1vw 2vw;
+    transition: 0.25s linear;
+    margin :2vh 0;
+    width : 100%;
+    font-weight : 600;
+}
+.page2 .content .left a:nth-child(3){
+    background-color: black;
+    color: white;
+}
+
+.page2 .content .left a:hover{
+    background-color: black;
+    color :white;
+}
+
+.page2 .content .right {
+    width : 80%;
+    height : 100%;
+    padding : 0 2vw;
+    
+}
+
+.page2 .content .right h3:first-child{
+    font-size: 1.5vw;
+}
+
+
+
+.page2 .content .right .greet-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width : 100%;
+    padding : 2vw 0;
+    padding-right : 3vw;
+}
+.page2 .content .right .greet-user h2{
+    font-size: 3vw;
+}
+.page2 .content .right .greet-user  button{
+    font-size: 1vw;
+    font-weight: 700;
+    padding : 0.5vw 3vw;
+    border-radius : 2vh;
+    border:none;
+    background-color: blueviolet;
+    color: white;
+}
+
+.page2 .content .right .right-middle{
+    height : 50%;
+    width : 100%;
+    background-color: rgb(172, 168, 168);
+    border-radius : 2vh;
+    display: flex;
+    padding : 1vh;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.page2 .content .right .right-middle .box {
+    height : 100%;
+    width : 32vh;
+    background-color: blueviolet;
+    padding : 2.5vh;
+    text-align: start;
+    border-radius: 2vh;
+    margin : 0 1.5vh;
+    color : white;
+}
+.page2 .content .right .right-middle .box h4{
+    color :black;
+}
+
+.page2 .content .right .right-middle .box .circle {
+    height : 20vh;
+    width : 20vh;
+    background-color: white;
+    color: black;
+    padding : 3vh;
+    border-radius : 50%;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin : 2vh;
+}
+
+.page2 .content .right .right-middle .box2 .price{
+    display: flex;
+    align-items: baseline;
+}
+.page2 .right-middle .box2 h1{
+     font-weight: 700;
+     padding : 2vh 0;
+}
+.page2 .right-middle .box2 .price sup{
+    font-size : 2vh;
+    font-weight : 500;
+}
+.page2 .right-middle .box2 .price p{
+    font-size : 2vh;
+    font-weight : 500;
+    
+}
+
+.page2 .content .right .plans{
+    padding : 1vw;
+    margin : 0.8vw 0;
+}
+.page2 .content .right .plans .pln-btn{
+    display: flex;
+}
+.page2 .content .right .plans .pln-btn  button{
+    font-size : 1vw;
+    font-weight: 600;
+    height : 6vh;
+    width : 20%;
+    padding : 0.6vw 1vw;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-bottom : 1px solid grey;
+    background-color: transparent;
+    margin-right  : 3vw;
+    margin-top : 1vw;
+    transition: 0.5s linear;
+}
+
+.page2 .content .right .plans button:hover{
+    background-color: black;
+    color : white;
+}
+
+/*****************page3 ****************/
+
+.page3{
+    height : 100%;
+    width : 100%;
+    /* background-color: black; */
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.page3 .empty{
+    height : 10%;
+    width : 100%;
+}
+
+.page3 > .heading {
+   padding : 4vh;
+   font-weight : 700;
+   color : black;
+}
+.page3 .content {
+    width : 100%;
+    height : 80%;
+    overflow-x: scroll;
+   white-space: nowrap;
+   text-align: center;
+   padding : 4vh 0;
+}
+
+.page3 .content .card{
+    width : 45vh;
+    height : 90%;
+    padding : 2vh;
+    border : 2px solid white;
+    border-radius: 2vh;
+    background-color: rgb(37, 37, 37);
+    display: inline-block;
+    transition : 0.25s linear;
+    color :white;
+    white-space: wrap;
+    text-align: start;
+    margin: 0  2vh;
+    /* box-shadow: 9px 9px rgb(66, 64, 64) ; */
+} 
+
+.page3 .content  .card:hover{
+    scale: 1.1;
+}
+
+
+
+.page3 .content .card h1:first-child{
+   font-weight : 600;
+   color : blueviolet;
+   padding : 1vh 0;
+   font-size: 4vh;
+}
+.page3 .content .card p{
+   font-size : 1.6vh;
+   line-height : 2vh;
+}
+.page3 .content .card .price{
+    display: flex;
+    align-items: center;
+    padding : 2vh;
+   
+}
+.page3 .content .card .price sup{
+   font-size: 3vh;
+   font-weight: 600;
+   color: aquamarine;
+}
+.page3 .content .card .price h1{
+   font-size: 5vh;
+   font-weight: 600;
+}
+.page3 .content .card button{
+  font-size: 2vh;
+  font-weight :500;
+  width : 90%;
+  padding : 1.5vh 0;
+  border-radius : 25px;
+  background-color: rgb(61, 61, 61);
+  color : white;
+  border : none;
+  transition : 0.25s linear;
+}
+
+.page3 .content .card button:hover{
+    background-color: azure;
+    color: black;
+}
+.page3 .content .card .check{
+  padding : 5vh 0;
+  width : 100%;
+}
+.page3 .content .card .check p{
+  padding : 2vh 0;
+  width : 100%;
+  border-bottom : 1px solid white;
+}
+
+
+
+
+
+
