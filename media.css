@@ -148,6 +148,9 @@ margin :2vh 0;
 }
 
 /*********************page4 ************/
+.page4{
+    height :max-content;
+}
 .page4 .content .card {
     margin : 2vh 0;
     z-index: -1;
@@ -157,6 +160,10 @@ margin :2vh 0;
 }
 
 /***page5 *************/
+.page5{
+    height : max-content;
+    padding :0 0;
+}
 .page5 .content{
     flex-direction: column;
     padding :0 0;
@@ -164,6 +171,7 @@ margin :2vh 0;
 }
 .page5 .content .left ,.page5 .content .right{
     width : 100%;
+    
 }
 .page5 .content .left h1{
     font-size: 9vw;
@@ -178,5 +186,16 @@ margin :2vh 0;
 .page5 .scroller .card{
     width : 45vh;
     margin : 2vh 1vh;
+}
+
+footer {
+    padding : 3vh 1vh;
+}
+
+footer ul a{
+    font-size: 3vw;
+}
+footer p{
+    font-size: 2.4vw;
 }
 }
