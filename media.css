@@ -4,6 +4,7 @@ nav .menu{
 @media (max-width : 600px){
     nav .menu{
         display : initial;
+        z-index :100; 
     }
     nav .menu button{
         font-size: 3vh;
@@ -48,8 +49,6 @@ nav .menu{
        height  : 100%;
     }
 
-    
-
 .offcanvas-body{
     display: flex;
     flex-direction: column;
@@ -71,47 +70,113 @@ nav .menu{
 }
 
 /*****************page 2***************/
-.page2 {
-    border-top : 2px solid black;
+.page2{
+    height : max-content;
+    text-align : center;
 }
-.page2 .content .left{
+.page2 .content{
+    flex-direction: column;
+}
+.page2 .content .left {
+    width : 100%;
+    height : 20%;
+    text-align: center;
+}
+
+.page2 .content .left h1{
+    font-size: 9vw;
+}
+.page2 .content .left .explore-btn{
+    display: flex;
+    justify-content: center;
+     
+}
+
+.page2 .content .left .explore-btn button{
+    width : 30vw;
+    padding : 1vw 2vw;
+    font-size: 2.5vw;    
+}
+
+.page2 .content .right{
+    width : 100%;
+    height : 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page2 .content .right form{
+    width : 45vh;   
+}
+.page2 .content .right form input {
+margin :2vh 0;
+}
+/*******************page 3*******************/
+
+.page3 .content .left{
     display: none;  
 }
-.page2 .content .right {
+.page3 .content .right {
     width : 100%; 
 }
-.page2 .content .right h3:first-child{
+.page3 .content .right h3:first-child{
     font-size: 2.5vh;
 }
 
-.page2 .content .right .greet-user h2{
+.page3 .content .right .greet-user h2{
     font-size: 6vh;
 }
-.page2 .content .right .greet-user  button{
+.page3 .content .right .greet-user  button{
      font-size: 2.5vw;
      padding : 1vw 2vw;
 
 }
-.page2 .content .right .plans{
+.page3 .content .right .plans{
     padding : 1vw;
     margin : 5vh 0;
 }
 
-.page2 .content .right .plans h3{
+.page3 .content .right .plans h3{
    font-size: 3vh;
 }
 
 
-.page2 .content .right .plans .pln-btn  button{
+.page3 .content .right .plans .pln-btn  button{
     width : 40%;
     font-size: 2vh;
 }
 
-/*********************page3 ************/
-.page1 .content .card {
+/*********************page4 ************/
+.page4 .content .card {
     margin : 2vh 0;
+    z-index: -1;
 }
-.page1 .content  .card:hover{
-    scale: 1;
+.page4 .content  .card:hover{
+    scale: 1.03;
+}
+
+/***page5 *************/
+.page5 .content{
+    flex-direction: column;
+    padding :0 0;
+    justify-content: center;
+}
+.page5 .content .left ,.page5 .content .right{
+    width : 100%;
+}
+.page5 .content .left h1{
+    font-size: 9vw;
+}
+.page5 .content .left button{
+    font-size: 3vw;
+}
+.page5 .content .right{
+    padding : 1vh;
+}
+
+.page5 .scroller .card{
+    width : 45vh;
+    margin : 2vh 1vh;
 }
 }

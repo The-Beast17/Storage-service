@@ -78,9 +78,10 @@ nav .registration p{
     height : 100%;
 }
 
-.page2 .empty ,.page1 .empty{
+ .empty{
     width : 100%;
     height : 10%;
+    /* background-color: brown; */
 }
 
 .page1 .content {
@@ -149,17 +150,128 @@ nav .registration p{
 
 /***********page2 ************/
 .page2{
+    width : 100%;
+    height : 100%;
+}
+
+.page2 .content{
+    width : 100%;
+    height:90%;
+    display: flex;
+}
+
+.page2 .content .left{
+    width : 60%;
+    /* height : 100%; */
+    padding : 2vh;
+}
+.page2 .content .left h1{
+   font-size: 7vw;
+   font-weight: 900;
+   font-family: "bebas";
+   padding : 2vh 4vh;
+   transform: rotateX(90deg);
+   transition: 1s linear;
+}
+.page2 .content .left h1 span{
+    color : aquamarine;
+}
+
+.page2:hover .left h1 {
+    transform: rotateX(30deg);
+}
+
+
+
+.page2 .content .left .explore-btn{
+    display: flex;
+}
+.page2 .content .left .explore-btn button{
+    font-size : 1vw;
+    font-weight: 600;
+    width : 30vh;
+    padding : 1vw 1vw;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    background-color: blueviolet;
+    color : white;
+    border-radius: 25px;
+    margin  : 0 2vw;
+    transition: 0.25s linear;
+}
+.page2 .content .left button:hover{
+    background-color: rgb(102, 26, 174);
+}
+
+
+.page2 .content .right {
+    width : 40%;
+    height : 100%;
+    padding : 4vh;
+}
+.page2 .content .right form{
+    width : 50vh;
+    padding : 4vh;
+   gap : 3vh;
+   border : 2px solid rgb(0, 0, 0);
+   margin : 0 auto;
+   text-align: center;
+   border-radius : 2vh;
+   color : black;
+   transition: 0.25s linear;
+   
+}
+.page2 .content .right form:hover{
+    box-shadow: 0 0 8px 8px grey;
+}
+
+.page2 .content .right form input{
+    width : 90%;
+    height : 5vh;
+    margin : 3vh 0;;
+    padding : 1vh 2vh;
+    background-color: transparent;
+    border : none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    color :rgb(0, 0, 0);
+}
+
+.page2 .content .right form textarea{
+    width : 90%;
+    margin : 3vh 0;
+    padding : 1vh 2vh;
+    border-radius : 2vh;
+    background-color: transparent;
+}
+
+.page2 .content .right form button{
+    padding : 1.5vh 10vh;
+    font-size : 2.4vh;
+    font-weight: 600;
+    border-radius: 25px;
+    background-color: blueviolet;
+    border : none;
+    color : white;
+    transition: 0.25s linear;
+}
+.page2 .content .right  button:hover{
+    background-color: rgb(102, 26, 174);
+}
+
+/***********page3 ************/
+.page3{
    width : 100%;
    height : 100%;
 }
 
-.page2 .content{
+.page3 .content{
     width : 100%;
     height : 90%;
     display: flex;
 }
 
-.page2 .content .left{
+.page3 .content .left{
     width : 20%;
     height : 100%;
     background-color: rgb(199, 198, 198);
@@ -169,14 +281,14 @@ nav .registration p{
     border-radius : 1.5vh;
 }
 
-.page2 .content .left h3{
+.page3 .content .left h3{
     display: flex;
     justify-content: space-between;
     width : 100%;
    padding : 1vw 2vw;
 }
 
-.page2 .content .left a{
+.page3 .content .left a{
     width : max-content;
     text-decoration: none;
     color : black;
@@ -186,30 +298,30 @@ nav .registration p{
     width : 100%;
     font-weight : 600;
 }
-.page2 .content .left a:nth-child(3){
+.page3 .content .left a:nth-child(3){
     background-color: black;
     color: white;
 }
 
-.page2 .content .left a:hover{
+.page3 .content .left a:hover{
     background-color: black;
     color :white;
 }
 
-.page2 .content .right {
+.page3 .content .right {
     width : 80%;
     height : 100%;
     padding : 0 2vw;
     
 }
 
-.page2 .content .right h3:first-child{
+.page3 .content .right h3:first-child{
     font-size: 1.5vw;
 }
 
 
 
-.page2 .content .right .greet-user{
+.page3 .content .right .greet-user{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -217,10 +329,10 @@ nav .registration p{
     padding : 2vw 0;
     padding-right : 3vw;
 }
-.page2 .content .right .greet-user h2{
+.page3 .content .right .greet-user h2{
     font-size: 3vw;
 }
-.page2 .content .right .greet-user  button{
+.page3 .content .right .greet-user  button{
     font-size: 1vw;
     font-weight: 700;
     padding : 0.5vw 3vw;
@@ -230,7 +342,7 @@ nav .registration p{
     color: white;
 }
 
-.page2 .content .right .right-middle{
+.page3 .content .right .right-middle{
     height : 50%;
     width : 100%;
     background-color: rgb(172, 168, 168);
@@ -240,8 +352,11 @@ nav .registration p{
     overflow-x: scroll;
     white-space: nowrap;
 }
+.page3 .content .right .right-middle::-webkit-scrollbar {
+    display: none;
+  }
 
-.page2 .content .right .right-middle .box {
+.page3 .content .right .right-middle .box {
     height : 100%;
     width : 32vh;
     background-color: blueviolet;
@@ -251,11 +366,11 @@ nav .registration p{
     margin : 0 1.5vh;
     color : white;
 }
-.page2 .content .right .right-middle .box h4{
+.page3 .content .right .right-middle .box h4{
     color :black;
 }
 
-.page2 .content .right .right-middle .box .circle {
+.page3 .content .right .right-middle .box .circle {
     height : 20vh;
     width : 20vh;
     background-color: white;
@@ -269,32 +384,39 @@ nav .registration p{
     margin : 2vh;
 }
 
-.page2 .content .right .right-middle .box2 .price{
+.page3 .content .right .right-middle .box2 p{
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+    padding : 1vh 0;
+}
+
+.page3 .content .right .right-middle .box3 .price{
     display: flex;
     align-items: baseline;
 }
-.page2 .right-middle .box2 h1{
+.page3 .right-middle .box3 h1{
      font-weight: 700;
      padding : 2vh 0;
 }
-.page2 .right-middle .box2 .price sup{
+.page3 .right-middle .box3 .price sup{
     font-size : 2vh;
     font-weight : 500;
 }
-.page2 .right-middle .box2 .price p{
+.page3 .right-middle .box3 .price p{
     font-size : 2vh;
     font-weight : 500;
     
 }
 
-.page2 .content .right .plans{
+.page3 .content .right .plans{
     padding : 1vw;
     margin : 0.8vw 0;
 }
-.page2 .content .right .plans .pln-btn{
+.page3 .content .right .plans .pln-btn{
     display: flex;
 }
-.page2 .content .right .plans .pln-btn  button{
+.page3 .content .right .plans .pln-btn  button{
     font-size : 1vw;
     font-weight: 600;
     height : 6vh;
@@ -310,14 +432,14 @@ nav .registration p{
     transition: 0.5s linear;
 }
 
-.page2 .content .right .plans button:hover{
+.page3 .content .right .plans button:hover{
     background-color: black;
     color : white;
 }
 
-/*****************page3 ****************/
+/*****************page4 ****************/
 
-.page3{
+.page4{
     height : 100%;
     width : 100%;
     /* background-color: black; */
@@ -326,26 +448,26 @@ nav .registration p{
 }
 
 
-.page3 .empty{
+.page4 .empty{
     height : 10%;
     width : 100%;
 }
 
-.page3 > .heading {
-   padding : 4vh;
+.page4 > .heading {
+   padding : 2vh;
    font-weight : 700;
    color : black;
 }
-.page3 .content {
+.page4 .content {
     width : 100%;
-    height : 80%;
+    height : 85%;
     overflow-x: scroll;
    white-space: nowrap;
    text-align: center;
    padding : 4vh 0;
 }
 
-.page3 .content .card{
+.page4 .content .card{
     width : 45vh;
     height : 90%;
     padding : 2vh;
@@ -359,40 +481,45 @@ nav .registration p{
     text-align: start;
     margin: 0  2vh;
     /* box-shadow: 9px 9px rgb(66, 64, 64) ; */
+    scale : 1;
 } 
 
-.page3 .content  .card:hover{
+.page4 .content  .card:hover{
     scale: 1.1;
 }
 
 
 
-.page3 .content .card h1:first-child{
+.page4 .content .card h1:first-child{
    font-weight : 600;
    color : blueviolet;
    padding : 1vh 0;
    font-size: 4vh;
 }
-.page3 .content .card p{
-   font-size : 1.6vh;
+.page4 .content .card p{
+   font-size : 1.5vh;
    line-height : 2vh;
 }
-.page3 .content .card .price{
+.page4 .content .card .price{
     display: flex;
     align-items: center;
     padding : 2vh;
    
 }
-.page3 .content .card .price sup{
+.page4 .content .card .price sup{
    font-size: 3vh;
    font-weight: 600;
    color: aquamarine;
 }
-.page3 .content .card .price h1{
+.page4 .content .card .price h1{
    font-size: 5vh;
    font-weight: 600;
 }
-.page3 .content .card button{
+.page4 .content .card .price p{
+   margin-top : 3vh;
+   color : grey;
+}
+.page4 .content .card button{
   font-size: 2vh;
   font-weight :500;
   width : 90%;
@@ -404,19 +531,143 @@ nav .registration p{
   transition : 0.25s linear;
 }
 
-.page3 .content .card button:hover{
+.page4 .content .card button:hover{
     background-color: azure;
     color: black;
 }
-.page3 .content .card .check{
+.page4 .content .card .check{
   padding : 5vh 0;
   width : 100%;
 }
-.page3 .content .card .check p{
+.page4 .content .card .check p{
   padding : 2vh 0;
   width : 100%;
   border-bottom : 1px solid white;
 }
+
+/******************page 5 ***********************/
+
+.page5{
+    width : 100%;
+    height : 100%;
+}
+
+.page5 .content{
+    width : 100%;
+    height:max-content;
+    display: flex;
+}
+
+.page5 .content .left{
+    width : 65%;
+    padding : 2vh;
+    text-align: center;
+}
+.page5 .content .left h1{
+   font-size: 6vw;
+   font-weight: 900;
+   font-family: "bebas";
+
+   transition: 1s linear;
+}
+.page5 .content .left h1 span{
+    color : rgb(0, 157, 255);
+}
+
+.page5 .content .left button{
+    font-size : 1vw;
+    font-weight: 600;
+    padding : 1vh 5vh;
+    background-color: blueviolet;
+    color : white;
+    border-radius: 25px;
+    transition: 0.25s linear;
+    border : none;
+}
+.page5 .content .left button:hover{
+    background-color: rgb(102, 26, 174);
+}
+
+
+.page5 .content .right {
+    width : 35%;
+    display: flex;
+}
+
+.page5 .content .right .box{
+    width : 100%;
+    background-color: rgb(10, 10, 94);
+    color : white;
+    padding : 2vh;
+    border-radius : 2vh;
+    margin:1vh;
+}
+.page5 .content .right .right-l{
+    padding : 0.5vh;
+}
+.page5 .content .right .right-r{
+    padding : 0.5vh;
+}
+.page5 .content .right .box1{
+    height : 40vh;
+}
+
+.page5 .scroller{
+    width : 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.page5 .scroller::-webkit-scrollbar {
+    display: none;
+  }
+.page5 .scroller .card{
+    width : 65vh;
+    height : 25vh;
+    padding : 2vh;
+    margin : 0 1vh;
+    white-space: wrap;
+    display: inline-block;
+    background-color: black;
+}
+
+.page5 .scroller .card h5{
+     font-size : 3vh;
+     font-family: Arial, Helvetica, sans-serif;
+     color : white;
+}
+
+.page5 .scroller .card p{
+     color : grey;
+}
+
+footer{
+    width : 100%;
+    padding : 2vw;
+    text-align: center;
+    background-color: rgb(31, 30, 30);
+}
+
+footer ul{
+    display : flex;
+    gap : 5vw;
+    justify-content: center;
+}
+footer ul a{
+    font-size: 2.3vh;
+    text-decoration: none;
+    color : white;
+}
+footer ul a:hover{
+    text-decoration: underline;
+}
+footer p{
+    font-size: 2vh;
+    text-decoration: none;
+    color : rgb(154, 152, 152);
+}
+
+
+
 
 
 
